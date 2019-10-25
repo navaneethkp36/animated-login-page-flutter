@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget{
@@ -20,6 +21,7 @@ class LoginPage extends StatefulWidget{
   State createState()=>LoginPageState();
 }
 
+
 class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixin{
 
   AnimationController _iconAnimationController;
@@ -30,7 +32,7 @@ class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixi
     super.initState();
     _iconAnimationController=AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 500),
+      duration: Duration(milliseconds: 499),
     );
     _iconAnimation=CurvedAnimation(
       parent: _iconAnimationController,
@@ -79,13 +81,13 @@ class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixi
                       children: <Widget>[
                         TextFormField(
                           decoration: InputDecoration(
-                          labelText: "Enter Email",
+                          labelText: "User Name or Email",
                           ),
                         keyboardType: TextInputType.emailAddress,
                         ),
                         TextFormField(
                           decoration: InputDecoration(
-                          labelText: "Enter Password",
+                          labelText: "Password",
                           ),
                         keyboardType: TextInputType.text,
                         obscureText: true,
@@ -95,7 +97,7 @@ class LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixi
                         ),
                         MaterialButton(
                           height: 40.0,
-                          minWidth: 100.0,
+                          minWidth: 99.9,
                           color: Colors.teal,
                           textColor: Colors.white,
                           child: Text("Login"),

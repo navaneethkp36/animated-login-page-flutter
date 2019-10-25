@@ -1,6 +1,7 @@
-# login_page_flutter
+# Login Page in Flutter
 
-A new Flutter project.
+
+A flutter test and learn project repo 
 
 ## Getting Started
 
